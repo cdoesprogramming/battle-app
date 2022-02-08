@@ -2,20 +2,17 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 
 get '/' do
-  'hello'
+  erb(:index)
 end
 
 get '/secret' do
-  'Hello Makers Academy'
+  erb(:index)
 end
 
 get '/makers' do
-  'BOO!'
+  erb(:index)
 end
 
 get '/cat' do
-  "<div style='border: 8px dashed red'>
-    <img src='https://i.imgur.com/jFaSxym.png' alt='Cute picture of a kitten'>
-  </div>"
+  erb(:index)
 end
-
