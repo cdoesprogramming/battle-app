@@ -2,15 +2,15 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 
 get '/' do
-  erb(:index)
+  "hello!"
 end
 
 get '/secret' do
-  erb(:index)
+  "secret"
 end
 
 get '/makers' do
-  erb(:index)
+  "makers"
 end
 
 get '/cat' do
